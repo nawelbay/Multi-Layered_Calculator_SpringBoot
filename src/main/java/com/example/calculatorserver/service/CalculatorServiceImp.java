@@ -5,7 +5,6 @@ import com.example.calculatorserver.model.Operation;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class CalculatorServiceImp implements CalculatorService {
@@ -56,7 +55,7 @@ public class CalculatorServiceImp implements CalculatorService {
     }
 
     @Override
-    public Optional<Operation> getOperationById(Long id) {
+    public Operation getOperationById(Long id) {
         return this.operationRepository.findById(id);
     }
 

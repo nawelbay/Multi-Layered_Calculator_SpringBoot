@@ -38,11 +38,11 @@ public class CalculatorController {
     }
 
     @GetMapping("/history/{id}")
-    public Optional<Operation> getById(@PathVariable Long id) {
+    public Operation getById(@PathVariable Long id) {
         return calculatorService.getOperationById(id);
     }
 
-    @GetMapping("/history/{type}")
+    @GetMapping("/history/type/{type}")
     public List<Operation> getByType(@PathVariable String type) {
         return calculatorService.getOperationsByType(type);
     }

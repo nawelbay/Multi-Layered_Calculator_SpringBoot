@@ -22,13 +22,13 @@ public class OperationRepository {
         return operations;
     }
 
-    public Optional<Operation> findById(Long id) {
+    public Operation findById(Long id) {
         for (Operation op : operations) {
             if (op.getId().equals(id)) {
-                return Optional.of(op);
+                return op;
             }
         }
-        return Optional.empty();
+        return null;
     }
 
     public List<Operation> findByType(String type) {

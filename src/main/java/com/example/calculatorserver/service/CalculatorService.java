@@ -3,7 +3,6 @@ package com.example.calculatorserver.service;
 import com.example.calculatorserver.model.Operation;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface CalculatorService {
 
@@ -14,7 +13,7 @@ public interface CalculatorService {
 
     List<Operation> getAllOperations();
 
-    Optional<Operation> getOperationById(Long id);
+    Operation getOperationById(Long id);
 
     List<Operation> getOperationsByType(String type);
 }
