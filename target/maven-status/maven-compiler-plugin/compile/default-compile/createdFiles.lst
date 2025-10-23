@@ -1,0 +1,3 @@
+com\example\calculatorserver\controller\CalculatorController.class
+com\example\calculatorserver\CalculatorServerApplication.class
+com\example\calculatorserver\model\Result.class
